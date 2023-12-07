@@ -71,6 +71,7 @@ The Loan App project is organized into the following directories to maintain a c
 - **Routes:** Holds all route definitions for the backend.
 
   - **UserRoutes.js:** Defines routes related to user operations in the backend.
+  - **To access Admin Login** use /adminlogin
 
 
 - **Controllers:** The heart of the backend logic. The `UserController` in this directory is particularly important.
