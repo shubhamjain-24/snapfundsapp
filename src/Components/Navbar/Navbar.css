@@ -1,0 +1,146 @@
+/* Navbar styling */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background-color: #f5f5f5;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+/* Container for navigation items */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  max-width: 1500px;
+  position: relative;
+  color: #333333;
+}
+
+/* Logo styling */
+.logo_img {
+  width: 200px;
+  height: 100px;
+}
+
+.nav-logo {
+  margin-left: 40px;
+  cursor: pointer;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Navigation menu styling */
+.nav-menu {
+  font-family: var(--font3);
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 40px;
+}
+
+/* Navigation link styling */
+.nav-links {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+
+/* Navigation item styling */
+.nav-item {
+  line-height: 40px;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+/* Navigation item underline effect */
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  background: #ffdd40;
+}
+
+/* Active navigation item styling */
+.nav-item .active {
+  color: #f4cc1c;
+  border: 1px solid #f4cc1c;
+  font-weight: 600;
+}
+
+/* Hamburger menu icon styling */
+.nav-icon {
+  display: none;
+  color: #f5b921;
+}
+
+.nav-icon .icon {
+  display: inline-block;
+  font-size: 40px;
+  margin-left: -20px;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-top: 1px solid #fff;
+    position: absolute;
+    top: 100px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-logo {
+    margin-left: 80px;
+  }
+
+  .nav-menu.active {
+    background: #f5f5f5;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-item .active {
+    color: #ffdd40;
+    border: none;
+  }
+
+  .nav-links {
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-100%, -50%);
+    cursor: pointer;
+    color: #ffdd40;
+  }
+}

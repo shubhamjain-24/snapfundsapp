@@ -1,0 +1,35 @@
+/* Main Container Styling */
+.intro2_mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text Container Styling */
+.intro2_textContainer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    flex-direction: column;
+}
+
+/* Heading Styling */
+.intro2_headText {
+    font-family: var(--font2);
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Subtext Styling */
+.intro2_subText {
+    font-family: var(--font3);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #f5f5f5;
+    padding: 30px;
+}

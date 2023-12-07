@@ -1,0 +1,123 @@
+/* FAQ Main Container */
+.faq_outer_mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+/* FAQ Text Section */
+.faq_outer_textDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.faq_outer_headText {
+  font-family: var(--font1);
+  font-size: 40px;
+  color: var(--color1r);
+  font-weight: 800;
+}
+
+.faq_outer_subtext {
+  font-family: var(--font3);
+  font-size: 22px;
+  color: var(--color2b);
+  font-weight: 400;
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* FAQ Data Section */
+.faq_outer_dataDiv {
+  width: 65%;
+}
+
+/* FAQ Question Container */
+.faq_mainContainer {
+  margin-bottom: 16px;
+}
+
+/* FAQ Question Container */
+.faq_questionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Expanded Question Container */
+.faq_questionContainer.expanded {
+  background-color: #022b6dbb;
+  transform: scale(1.03);
+}
+
+/* FAQ Question */
+.faq_question {
+  font-size: 22px;
+  font-family: var(--font1);
+  font-weight: 400;
+  margin: 0;
+}
+
+/* FAQ Answer Container */
+.faq_answerDiv {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+/* Show Answer Container */
+.faq_answerDiv.show {
+  max-height: 1000px;
+}
+
+/* FAQ Answer */
+.faq_answer {
+  font-size: 18px;
+  font-family: var(--font3);
+  border: 1px solid #ddd;
+  color: black;
+  padding: 20px;
+  margin: 0;
+}
+
+/* FAQ Icon */
+.faq_icon {
+  margin: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect for FAQ Icon */
+.faq_icon:hover {
+  transform: scale(1.1);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1000px) {
+  .faq_outer_headText {
+      font-size: 30px;
+  }
+  .faq_outer_subtext,
+  .faq_question {
+      font-size: 18px;
+  }
+  .faq_answer {
+      font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .faq_outer_dataDiv {
+      width: 80%;
+  }
+}

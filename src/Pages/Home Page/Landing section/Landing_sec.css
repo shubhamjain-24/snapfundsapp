@@ -1,0 +1,112 @@
+/* Base Styles */
+
+/* Main container for landing section */
+.Ls_mainContainer {
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+/* Flex container for text and image */
+.Ls_flexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 80px;
+}
+
+/* Container for text content */
+.Ls_textContainer {
+    flex: 1;
+    padding: 30px;
+    background-color: rgba(129, 138, 224, 0.71); 
+    border-radius: 30px;
+}
+
+/* Headline styling */
+.Ls_headtext {
+    font-family: var(--font2);
+    font-size: 40px;
+    color: #333333;
+    font-weight: 500;
+    line-height: 1.0;
+}
+
+/* Subtext styling */
+.Ls_subtext {
+    margin-top: 25px;
+    width: 75%;
+    font-family: var(--font3);
+}
+
+/* Apply Now button styling */
+.Ls_button {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    background-color: #e34e62;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-family: var(--font2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.Ls_button:hover {
+    transform: scale(1.1);
+}
+
+/* Container for the image */
+.Ls_imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin-left: 50px;
+}
+
+/* Responsive Styles */
+
+/* Adjustments for larger screens */
+@media screen and (max-width: 1200px) {
+    .Ls_image {
+        width: 370px;
+        height: 300px;
+    }
+    .Ls_headtext {
+        font-size: 30px;
+    }
+    .Ls_subtext {
+        font-size: 16px;
+    }
+}
+
+/* Adjustments for medium screens */
+@media screen and (max-width: 1000px) {
+    .Ls_flexContainer {
+        flex-direction: column;
+    }   
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 500px) {
+    .Ls_headtext {
+        font-size: 26px;
+    }
+    .Ls_subtext {
+        font-size: 13px;
+    }
+    .Ls_button {
+        font-size: 16px;
+    }
+    .Ls_image {
+        width: 270px;
+        height: 200px;
+    }
+    .Ls_imageContainer {
+        margin: 0;
+    }
+}

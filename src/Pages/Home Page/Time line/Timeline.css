@@ -1,0 +1,35 @@
+/* Timeline Main Container */
+.Timeline_mainContainer {
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Timeline Heading */
+.Timeline_headText {
+    margin-top: 50px;
+    font-family: var(--font2);
+    font-size: 30px;
+    border-bottom: 4px solid; 
+}
+
+/* Timeline Sub Container */
+.Timeline-subContainer {
+    
+}
+
+/* Timeline Card Text - Step Title */
+.Timeline_cardText1 {
+    font-size: 20px;
+    font-family: var(--font2);
+    color: #e34e62;
+}
+
+/* Timeline Card Text - Step Description */
+.Timeline_cardText2 {
+    font-size: 16px;
+    font-family: var(--font3);
+}
+

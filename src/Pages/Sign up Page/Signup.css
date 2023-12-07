@@ -1,0 +1,169 @@
+/* Styles for the main container */
+.Su_mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles for the flex container */
+.Su_flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #f5f5f5;
+  padding: 50px;
+  gap: 40px;
+  border-radius: 30px;
+}
+
+/* Styles for the image container */
+.Su_imgDiv {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles for the form container */
+.Su_formDiv {
+  flex: 1;
+}
+
+/* Styles for individual form sections */
+.Su_formContainer {
+  padding: 20px;
+}
+
+/* Styles for the heading text */
+.Su_headText {
+  font-family: var(--font2);
+  font-size: 34px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333333;
+}
+
+/* Styles for the input container */
+.Su_inputDiv {
+  border-bottom: 3px solid #333333;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  width: fit-content;
+}
+
+/* Styles for input fields */
+.Su_input {
+  width: 250px;
+  border: none;
+  background-color: #f5f5f5;
+  font-family: var(--font3);
+  font-size: 16px;
+  margin: 0px 20px;
+  outline: none;
+}
+
+/* Styles for focused input */
+.Su_inputDiv.focused {
+  background-color: #f5f5f5;
+}
+
+/* Styles for the sign-up button */
+.Su_button {
+  padding: 15px 25px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #6eade3;
+  color: white;
+  font-size: 12px;
+  font-family: var(--font3);
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+/* Styles for button hover effect */
+.Su_button:hover {
+  background-color: #59a3e4;
+  color: black;
+}
+
+/* Styles for subtext */
+.Su_subtext {
+  font-family: var(--font3);
+  padding: 0px 20px;
+}
+
+/* Styles for login text link */
+.Su_logintext {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #12a0f9;
+  font-weight: 500;
+}
+
+/* Styles for social media icons container */
+.Su_iconsDiv {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  font-size: 20px;
+}
+
+/* Styles for individual social media icons */
+.Su_logo1,
+.Su_logo2,
+.Su_logo3 {
+  cursor: pointer;
+  color: #333333;
+  transition: 0.2s ease-in-out;
+}
+
+/* Styles for social media icon hover effect */
+.Su_logo1:hover {
+  color: #43588a;
+}
+
+.Su_logo2:hover {
+  color: #ff3d00;
+}
+
+.Su_logo3:hover {
+  color: #27a3f2;
+}
+
+/* Styles for alert message */
+.Su_alert {
+  font-family: var(--font3);
+  padding: 10px;
+  width: 50%;
+  color: red;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 1150px) {
+  .Su_flexContainer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .Su_img {
+    width: 60%;
+  }
+  .Su_flexContainer {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Su_formContainer {
+    padding: 7px;
+  }
+  .Su_input {
+    width: 180px;
+  }
+}

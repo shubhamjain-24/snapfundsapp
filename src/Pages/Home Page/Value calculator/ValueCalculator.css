@@ -1,0 +1,156 @@
+/* General styling for the main container */
+.VC_mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  flex-direction: column;
+}
+
+/* Styling for the main heading text */
+.VC_headText {
+  font-family: var(--font2);
+  color: #333333;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* Styling for the main sub-container */
+.VC_subContainer {
+  margin-top: 50px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 30px;
+}
+
+/* Styling for labels within the sub-container */
+.VC_label {
+  font-family: var(--font3);
+  padding: 5px;
+}
+
+/* Styling for the principal value container */
+.VC_pricipalDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+/* Styling for the loan types section */
+.loanTypes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font3);
+}
+
+/* Styling for individual radio items within loan types */
+.VC_radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+/* Styling for the values associated with radio items */
+.VC_radio_value {
+  padding: 5px;
+}
+
+/* Styling for the years input container */
+.VC_yearsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+
+/* Styling for numeric input fields */
+.numberInput {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Styling for focused numeric input fields */
+.numberInput:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Styling for the text associated with years input */
+.VC_yearText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font3);
+}
+
+/* Styling for the result container */
+.VC_sumContainer {
+  font-family: var(--font3);
+  font-weight: 600;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for range input */
+input[type=range] {
+  height: 37px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+
+/* Styling for focused range input */
+input[type=range]:focus {
+  outline: none;
+}
+
+/* Styling for the range input background */
+.VC_rangeinput {
+  background-color: #f5f5f5;
+}
+
+/* Styling for the track of the range input */
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #6976DC;
+  border-radius: 5px;
+}
+
+/* Styling for the thumb of the range input */
+input[type=range]::-webkit-slider-thumb {
+  height: 31px;
+  width: 8px;
+  border-radius: 5px;
+  background: #E34E62;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -13.5px;
+}
+
+/* Styling for the track when the range input is focused */
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #6976DC;
+}
+
+/* Styling for the final result value */
+.VC_sumValue {
+  font-weight: 800;
+  color: #E34E62;
+}

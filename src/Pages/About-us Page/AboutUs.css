@@ -1,0 +1,182 @@
+/* Main Container for Introduction Section */
+.introau_mainContainer {
+  background: url("../../Images/auback.png");
+  max-width: 100%;
+  object-fit: cover;
+  background-size: cover; /* Adjust this property */
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container for Text in Introduction Section */
+.introau_textContainer {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Header Text in Introduction Section */
+.introau_headText {
+  font-size: 70px;
+  color: white;
+  font-family: var(--font1);
+  font-weight: 800;
+}
+
+/* SEO Text in Introduction Section */
+.introau_seoText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: var(--font3);
+  margin-top: 10px;
+}
+
+/* Bottom Head Container */
+.au_bottomHeadContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Bottom Container */
+.au_bottomContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 80%;
+}
+
+/* Sub Text */
+.au_subText {
+  font-size: 24px;
+  color: #333;
+  font-family: var(--font2);
+  font-weight: 600;
+}
+
+/* Sub Text 2 with Background */
+.ab_subText2 {
+  width: 100%;
+  font-family: var(--font1);
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #6976dc;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* Sub Text 3 */
+.ab_subtext3 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  font-family: var(--font3);
+}
+
+/* Service Division */
+.au_serviceDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* Sub Division for Services */
+.au_serviceSubDiv {
+  width: 80%;
+}
+
+/* Text for Services */
+.au_serviceText1 {
+  font-size: 24px;
+  font-family: var(--font1);
+  font-weight: 600;
+  color: #333;
+}
+
+/* Grid Division for Service Cards */
+.au_serviceGridDiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Service Card Styling */
+.au_card1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  color: #333;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Icon in Service Card */
+.au_cardIcon {
+  font-size: 50px;
+  transition: color 0.3s ease;
+}
+
+/* Text in Service Card */
+.au_cardText {
+  font-size: 20px;
+  font-family: var(--font2);
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Hover Effect for Service Card */
+.au_card1:hover .au_cardIcon {
+  color: #6976DC;
+  animation: shake 0.5s ease;
+}
+
+/* Keyframes for Shake Animation */
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20%, 60% {
+    transform: translateX(-5px);
+  }
+  40%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  .introau_headText {
+    font-size: 40px;
+  }
+  .introau_seoText {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .introau_headText {
+    font-size: 30px;
+  }
+  .introau_seoText {
+    font-size: 20px;
+  }
+}

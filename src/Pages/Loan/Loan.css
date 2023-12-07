@@ -1,0 +1,112 @@
+/* Styles for the main container */
+.Loan_mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+/* Styles for the header text */
+.Loan_headText {
+    font-family: var(--font2);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(158, 158, 158, 0.186);
+}
+
+/* Styles for the grid container */
+.Loan_gridContainer {
+    margin: 30px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+/* Styles for individual cards using CSS classes Loan_card1, Loan_card2, etc. */
+.Loan_card1, .Loan_card2, .Loan_card3, .Loan_card4, .Loan_card5, .Loan_card6 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Styles for the arrow button and its container */
+.Loan_arrowbuttonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styles for the home icon */
+.Loan_homeIcon {
+    font-size: 50px;
+}
+
+/* Styles for the arrow button */
+.Loan_arrowbutton {
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover effect for the arrow button */
+.Loan_arrowbutton:hover {
+    transform: translateX(5px);
+}
+
+/* Styles for the card text container */
+.Loan_cardTextdiv {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.159);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+/* Styles for the main title of the card */
+.Loan_cardText1 {
+    font-family: var(--font2);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Styles for additional text in the card */
+.Loan_cardText2 {
+    font-family: var(--font3);
+    color: #333;
+    margin-top: 4px;
+}
+
+/* Styles for the bold text in the card */
+.Loan_cardText3 {
+    font-weight: 600;
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 500px) {
+    .Loan_gridContainer {
+        margin: 0;
+        margin-top: 20px;
+        width: 90%;
+    }
+}
+
+/* Further adjustment for even smaller screens */
+@media screen and (max-width: 400px) {
+    .Loan_gridContainer {
+        width: 100%;
+    }
+}

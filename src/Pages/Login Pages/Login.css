@@ -1,0 +1,155 @@
+/* Main Login Container */
+.Lg_mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Flex Container for Image and Form */
+.Lg_flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #f5f5f5;
+  padding: 50px;
+  gap: 40px;
+  border-radius: 30px;
+}
+
+/* Image Section */
+.Lg_imgDiv {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form Section */
+.Lg_formDiv {
+  flex: 1;
+}
+
+/* Form Container */
+.Lg_formContainer {
+  padding: 20px;
+}
+
+/* Header Text */
+.lg_headText {
+  font-family: var(--font2);
+  font-size: 34px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333333;
+}
+
+/* Input Div Styling */
+.Lg_inputDiv {
+  border-bottom: 3px solid #333333;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  width: fit-content;
+}
+
+/* Input Styling */
+.Lg_input {
+  width: 250px;
+  border: none;
+  background-color: #f5f5f5;
+  font-family: var(--font3);
+  font-size: 16px;
+  margin: 0px 20px;
+  outline: none;
+}
+
+/* Focused Input Styling */
+.Lg_inputDiv.focused {
+  background-color: #f5f5f5;
+}
+
+/* Login Button Styling */
+.Lg_button {
+  padding: 15px 25px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #6eade3;
+  color: white;
+  font-size: 12px;
+  font-family: var(--font3);
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+/* Hover State for Login Button */
+.Lg_button:hover {
+  background-color: #59a3e4;
+  color: black;
+}
+
+/* Create an Account Link Styling */
+.LG_subtext {
+  font-family: var(--font3);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0px 20px;
+}
+
+/* Social Media Icons Styling */
+.Lg_iconsDiv {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  font-size: 20px;
+}
+
+/* Social Media Logo Styling */
+.Lg_logo1, .Lg_logo2, .Lg_logo3 {
+  cursor: pointer;
+  color: #333333;
+  transition: 0.2s ease-in-out;
+}
+
+/* Hover State for Social Media Logos */
+.Lg_logo1:hover {
+  color: #43588a;
+}
+
+.Lg_logo2:hover {
+  color: #ff3d00;
+}
+
+.Lg_logo3:hover {
+  color: #27a3f2;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1150px) {
+  .Lg_flexContainer {
+      flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Lg_flexContainer {
+      margin-top: 0;
+  }
+
+  .Lg_img {
+      width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Lg_formContainer {
+      padding: 15px;
+  }
+
+  .Lg_input {
+      width: 180px;
+  }
+}

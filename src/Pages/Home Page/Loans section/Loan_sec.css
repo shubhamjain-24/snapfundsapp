@@ -1,0 +1,109 @@
+/* Main container styling */
+.Loan_s_mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+/* Heading text styling */
+.Loan_s_headText {
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: var(--font2);
+    font-weight: 500;
+    color: #333333;
+    text-align: center;
+}
+
+/* Grid container styling */
+.Loan_s_gridContainer {
+    margin-top: 50px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px;
+}
+
+/* Grid item styling */
+.Loan_s_griddiv1 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Hover effect on grid item */
+.Loan_s_griddiv1:hover {
+    background-color: rgba(142, 150, 222, 0.471);
+}
+
+/* Icon styling */
+.Loan_s_icon {
+    font-size: 35px;
+    color: gray;
+    flex: 2;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+/* Icon color change on hover */
+.Loan_s_griddiv1:hover .Loan_s_icon {
+    color: rgb(96, 96, 96);
+}
+
+/* Subtext styling */
+.Loan_s_subtext {
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: var(--font3);
+    font-weight: 500;
+}
+
+/* Button styling */
+.Loan_s_button {
+    flex: 1;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+
+/* Button icon styling */
+.Loan_s_icon2 {
+    border: 1px solid lightgray;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: gray;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Button icon color change on hover */
+.Loan_s_griddiv1:hover .Loan_s_icon2 {
+    border-color: rgb(96, 96, 96);
+    color: rgb(79, 78, 78);
+}
+
+/* Button icon hover effect */
+.Loan_s_icon2:hover {
+    transform: translateX(5px);
+}
+
+/* Responsive styling for small screens */
+@media screen and (max-width: 500px) {
+    .Loan_s_gridContainer {
+        width: 100%;
+    }
+}

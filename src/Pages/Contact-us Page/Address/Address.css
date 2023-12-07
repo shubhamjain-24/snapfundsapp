@@ -1,0 +1,230 @@
+/* Main Container */
+.address_mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* First Sub Container */
+.address_subContainer {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sub-Division 1 - Form Section */
+.address_subDiv1 {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin-top: 20px;
+}
+
+.address_headText2 {
+  font-family: var(--font1);
+  color: var(--color2b);
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.address_formDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e4e4e4;
+  padding: 30px;
+  border-radius: 40px;
+  margin-top: 30px;
+}
+
+.address_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.address_input {
+  height: 40px;
+  width: 300px;
+  border-radius: 20px;
+  text-indent: 20px;
+  font-family: var(--font1);
+  border: none;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.address_message_input {
+  height: 70px;
+}
+
+.address_input::placeholder {
+  font-size: 15px;
+  font-family: var(--font3);
+}
+
+.address_input:focus {
+  outline: none;
+  border: none;
+}
+
+.address_button {
+  height: 30px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 13px;
+  font-family: var(--font3);
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  background-color: var(--color2b);
+  padding: 5px;
+  border: 1px solid var(--color2b);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.address_button:hover {
+  background-color: transparent;
+  color: var(--color2b);
+  font-weight: bold;
+}
+
+/* Sub-Division 2 - Data Section */
+.address_subDiv2 {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.address_divdatadiv {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.address_sub2textDiv {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  flex-direction: column;
+}
+
+.address_div2headtext {
+  font-family: var(--font1);
+  color: var(--color1r);
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.address_div2subtext {
+  font-family: var(--font3);
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.address_atag {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease-in-out;
+}
+
+.address_atag:hover {
+  transform: scale(1.2);
+}
+
+/* Last Divisions */
+.address_subContainer2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.address_subDiv3 {
+  flex: 1;
+}
+
+.address_subDiv4 {
+  flex: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .address_flexContainer {
+      display: block;
+  }
+  .address_headText {
+      font-size: 30px;
+  }
+  .address_subText {
+      font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .address_subText {
+      font-size: 18px;
+      font-weight: 400;
+  }
+  .address_input {
+      height: 40px;
+      width: 250px;
+  }
+  .address_headText2 {
+      font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .address_input {
+      height: 35px;
+      width: 200px;
+  }
+  .address_headText2 {
+      font-size: 24px;
+  }
+  .address_button {
+      height: 25px;
+      width: 160px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .address_input {
+      height: 30px;
+      width: 150px;
+  }
+}
+
+/* Media query for phones, adjusts the whole address section */
+@media screen and (max-width: 1100px) {
+  .address_subContainer {
+      flex-direction: column-reverse;
+  }
+  .address_subDiv1 {
+      width: 100%;
+  }
+  .address_subDiv2 {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .address_divdatadiv {
+      flex-direction: column;
+  }
+  .address_subContainer2 {
+      flex-direction: column;
+  }
+}

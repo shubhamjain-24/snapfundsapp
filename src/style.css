@@ -1,0 +1,12 @@
+:root {
+    --color1r:#da272f;
+    --color2b:#00296b;
+    --font1:'Roboto', sans-serif;
+    --font2:'Poppins', sans-serif;
+    --font3:'Raleway', sans-serif;
+  }
+  
+  body {
+    color: var(--primary-color); 
+    font-family: var(--font-family); 
+  }
