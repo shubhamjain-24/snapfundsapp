@@ -11,7 +11,7 @@ const AdminPortal = () => {
   const handleStatusChange = async (ind) => {
     try {
       const selectedUser = userData[ind];
-      const response = await axios.post(`api/user/setLoan`, {
+      const response = await axios.post(`https://loanbackend.vercel.app/api/user/setLoan`, {
         email: selectedUser.CustomerEmail,
         TotalAmount: selectedUser.CustomerAmount,
         TotalWeek: selectedUser.CustomerWeek,

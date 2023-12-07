@@ -11,7 +11,7 @@ import { FaSquareTwitter } from "react-icons/fa6";
 import { FaUserTie } from "react-icons/fa6";
 import { GiReceiveMoney } from "react-icons/gi";
 import { MdEmail } from "react-icons/md";
-import { NavLink, Link, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Signup = () => {
@@ -22,20 +22,18 @@ const Signup = () => {
   const [showAlert, setShowAlert] = useState(false);
   const [email, setEmail] = useState("");
   const [nameOfUser, setName] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const history = useNavigate();
 
-  // Toggle password visibility
   const handleTogglePassword = () => {
     setShowPassword(!showPassword);
   };
 
-  // Handle change in income input
   const handleIncomeChange = (e) => {
     setIncome(e.target.value);
   };
 
-  // Handle form submission
   const submitHandler = async (e) => {
     e.preventDefault();
     if (!nameOfUser || !email || !password || !income || !occupation) {
@@ -43,19 +41,18 @@ const Signup = () => {
       return;
     }
 
-    // Check minimum income requirement
     if (income < 5000) {
       setShowAlert(true);
       return;
     }
 
     try {
+      setLoading(true);
       const config = {
         headers: {
           "Content-type": "application/json",
         },
       };
-      // Make API call to register user
       const { data } = await axios.post(
         "https://loanbackend.vercel.app/api/user/register",
         {
@@ -68,25 +65,25 @@ const Signup = () => {
       );
       alert("Registration successful");
 
-      // Store user info in local storage
       localStorage.setItem("userInfo", JSON.stringify(data));
 
-      // Redirect to home page after successful registration
       history("/setloan");
     } catch (error) {
       alert("Error Occurred");
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <>
+      {loading && <div className="loader">Signing in...</div>}
       <div className="Su_mainContainer">
         <div className="Su_flexContainer">
           <div className="Su_imgDiv">
             <img src={img} alt="" className="Su_img" />
           </div>
           <div className="Su_formDiv">
-            {/* User registration form */}
             <div className="Su_formContainer">
               <div className="Su_headText">Sign Up</div>
               <div className="Su_inputDiv">
@@ -172,8 +169,8 @@ const Signup = () => {
                   />
                 )}
               </div>
-              <button className="Su_button" onClick={submitHandler}>
-                Sign Up
+              <button className="Su_button" onClick={submitHandler} disabled={loading}>
+                {loading ? "Signing in..." : "Sign Up"}
               </button>
             </div>
             <div className="Su_subtext">
@@ -182,7 +179,6 @@ const Signup = () => {
                 <span className="Su_logintext">Log In</span>
               </NavLink>
             </div>
-            {/* Social media icons */}
             <div className="Su_iconsDiv">
               <div className="Su_logo1">
                 <FaFacebookSquare />
