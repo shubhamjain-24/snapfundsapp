@@ -69,14 +69,37 @@
   }
  
   
-  /* Responsive styles */
   @media screen and (max-width: 600px) {
+    .mainTable-container {
+      margin: 10px;
+    }
+  
+    .mainTable-container table {
+      margin-top: 10px;
+    }
+  
     .mainTable-container th, .mainTable-container td {
       padding: 6px;
     }
   
+    .mainTable-container td table {
+      margin-top: 5px;
+    }
+  
     .mainTable-container button {
       padding: 6px 10px;
+      font-size: 14px;
+    }
+  
+    .waiting {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .waiting_button {
+      padding: 10px 15px;
+      margin-top: 10px;
+      font-size: 14px;
+      margin-left: 10px;
     }
   }
-  

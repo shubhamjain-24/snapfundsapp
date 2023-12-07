@@ -2,27 +2,41 @@
 This repository aims to assist you in beginning work on a MERN stack application with a solid file structure as a foundation. To get started make a copy of this template repo for your project teams.
 
 
-Certainly! Here's the modified paragraph for your README based on the provided package.json:
-
 Getting Started
-This project includes both the client application and the server application, and the node_modules directory will be present in two different places. To set up the project, follow these steps:
+**This project includes both the client application and the server application, and the node_modules directory will be present in two different places. To set up the project, follow these steps:**
 
-Run npm install from the root directory.
+**Run npm install from the root directory.**
 After this initial installation, run npm run-script install-all from the root directory. You can use this command anytime you need to install all modules again. This command is defined as a script in the package.json file.
 
 # Installing Dependencies
 
-npm install          # Install root-level dependencies
-npm run-script install-all # Install dependencies for both client and server
+**npm install**       
+#Install root-level dependencies
+**npm run-script install-all** 
+#Install dependencies for both client and server
 
 # Deployment
-This app is designed for easy deployment to Heroku. There is a script defined in package.json that automates the build and deployment process. For more information on deploying to Heroku, refer to the extra resources provided at the bottom of this file.
+If you have deployed the frontend and backend on Vercel instead of Heroku, you need to update the deployment-related information accordingly. The script in the package.json file that automates the build and deployment process might differ based on the hosting platform.
 
+**Assuming you have a vercel.json or now.json file for Vercel configuration, update your scripts section in package.json:**
+
+"scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "deploy": "vercel"
+}
+
+**Additionally, you might need to add "engines" field to specify the required Node.js version.**
+ For example:
+
+"engines": {
+  "node": "14.x"
+}
 # Scripts
-start: Start the client application.
-build: Build the client application for production.
-test: Run tests.
-eject: Eject from Create React App
+**start:** Start the client application.
+**build:** Build the client application for production.
+**test:** Run tests.
+**eject:** Eject from Create React App
 
 "scripts": {
   "start": "react-scripts start",
@@ -75,7 +89,7 @@ The Loan App project is organized into the following directories to maintain a c
 
 The `UserController` in the Controllers directory is a crucial part of our backend. It manages user-related operations, including authentication, registration, and other tasks. Explore this controller to understand how user-related functionalities are implemented in our backend.
 
-...
+
 
 ## Available Scripts
 
@@ -102,7 +116,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 If deploying to Heroku, this does not need to be run since it is handled by the heroku-postbuild script. Customize this according to your project.
 
-...
 
 ## Learn More
 
